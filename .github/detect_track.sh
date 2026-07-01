@@ -4,7 +4,7 @@ set -euo pipefail
 branches=$(git branch -r --contains HEAD)
 if echo "$branches" | grep -q 'origin/stable'; then
   track=stable
-elif echo "$branches" | grep -q 'origin/testing'; then
+elif echo "$branches" | grep -q 'origin/reF1nd-main'; then
   track=testing
 elif echo "$branches" | grep -q 'origin/oldstable'; then
   track=oldstable
